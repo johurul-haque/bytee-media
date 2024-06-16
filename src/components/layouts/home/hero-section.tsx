@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import banner from "@/assets/banner.png";
+import { TextGradient } from "@/components/text-gradient";
 
 export function HeroSection() {
   return (
@@ -9,10 +10,7 @@ export function HeroSection() {
         <h1 className="text-5xl leading-[2.8rem] tracking-wide font-medium">
           Tired of editing?
           <br />
-          <span className="bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium text-transparent bg-clip-text">
-            Focus on
-          </span>{" "}
-          creating
+          <TextGradient>Focus on</TextGradient> creating
         </h1>
 
         <p className="max-w-sm my-4 tracking-wider">
