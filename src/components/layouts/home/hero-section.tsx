@@ -30,7 +30,7 @@ export function HeroSection() {
 
       <Image
         src={banner}
-        className="max-h-full max-w-fit "
+        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)]"
         alt=""
         role="presentation"
         width={800}
