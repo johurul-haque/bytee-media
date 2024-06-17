@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="flex items-center justify-between h-[clamp(35rem,90svh,min(90svh,45rem))]">
       <div>
-        <h1 className="text-5xl leading-[2.8rem] tracking-wide font-medium">
+        <h1 className="text-4xl md:text-5xl leading-[2.8rem] tracking-wide font-medium">
           Tired of editing?
           <br />
           <TextGradient>Focus on</TextGradient> creating
@@ -28,7 +28,7 @@ export function HeroSection() {
 
       <Image
         src={banner}
-        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)]"
+        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)] max-lg:hidden"
         alt=""
         role="presentation"
         width={800}
