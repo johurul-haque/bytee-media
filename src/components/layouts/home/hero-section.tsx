@@ -13,7 +13,7 @@ export function HeroSection() {
           <TextGradient>Focus on</TextGradient> creating
         </h1>
 
-        <p className="max-w-sm my-4 tracking-wider">
+        <p className="max-w-sm mt-4 mb-6 tracking-wider">
           One Stop Solution for content creators. Say goodbye to average content
           and {"Hello to excellence"}
         </p>

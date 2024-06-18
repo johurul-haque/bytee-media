@@ -5,10 +5,10 @@ import { BookACall } from "@/components/book-a-call";
 
 export function WorkingSteps() {
   return (
-    <section className="flex gap-20 pb-16 justify-center">
+    <section className="flex max-lg:items-center max-lg:flex-col gap-20 pb-16 justify-center">
       <Image
         src={zunayed}
-        className="border-8 border-amber-light max-w-md"
+        className="border-8 border-amber-light max-w-md w-full"
         alt="Picture of Md. Zunayed Howlader"
         width={800}
         height={800}
@@ -35,7 +35,7 @@ export function WorkingSteps() {
           </li>
         </ol>
 
-        <BookACall />
+        <BookACall className="block max-w-fit mx-auto" />
       </div>
     </section>
   );
