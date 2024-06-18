@@ -1,0 +1,94 @@
+import { TextGradient } from "@/components/text-gradient";
+import { ayanJoy, zunayed } from "@/assets/team";
+import Image from "next/image";
+import { FacebookIcon, InstagramIcon } from "lucide-react";
+
+const MEMBERS = [
+  {
+    name: "Ayan Joy",
+    role: "Founder & CEO",
+    image: ayanJoy,
+    social: {
+      facebook: "",
+      instagram: "",
+    },
+  },
+  {
+    name: "Md. Zunayed Howlader",
+    role: "Co-Founder",
+    image: zunayed,
+    social: {
+      facebook: "",
+      instagram: "",
+    },
+  },
+];
+
+export function Team() {
+  return (
+    <section className="py-16">
+      <TextGradient asChild>
+        <h2 className="sm:text-center text-3xl mb-2 font-medium">
+          Meet the team
+        </h2>
+      </TextGradient>
+      <p className="sm:text-center max-w-md sm:mx-auto font-light leading-relaxed">
+        {"We're"} video enthusiasts, not just editors. We strategize, tell
+        stories, and geek out on marketing to help you win with video
+      </p>
+
+      <div className="flex max-sm:flex-col justify-center gap-6 mt-10">
+        {MEMBERS.map((member) => (
+          <figure key={member.social.facebook} className="max-w-sm">
+            <Image
+              src={member.image}
+              className="border-4 border-amber-light"
+              alt={`Picture of ${member.name}`}
+              width={800}
+              height={800}
+              quality={100}
+            />
+
+            <figcaption className="text-center mt-4">
+              <h3 className="text-sm">{member.role}</h3>
+              <div className="text-lg font-medium mb-3">{member.name}</div>
+
+              <dl className="flex gap-2 justify-center">
+                <dt className="sr-only">Facebook handle</dt>
+                <dd>
+                  <SocialLinks href="https://www.facebook.com">
+                    <FacebookIcon strokeWidth={1.2} size={16} />
+                  </SocialLinks>
+                </dd>
+
+                <dt className="sr-only">Instagram handle</dt>
+                <dd>
+                  <SocialLinks href="https://www.instagram.com">
+                    <InstagramIcon strokeWidth={1.2} size={16} />
+                  </SocialLinks>
+                </dd>
+              </dl>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function SocialLinks({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      className="inline-block p-2 rounded-full bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium"
+    >
+      {children}
+    </a>
+  );
+}
