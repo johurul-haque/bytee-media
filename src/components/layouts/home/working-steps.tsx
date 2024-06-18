@@ -35,7 +35,7 @@ export function WorkingSteps() {
           </li>
         </ol>
 
-        <BookACall className="block max-w-fit max-lg:mx-auto" />
+        <BookACall className="max-lg:mx-auto" />
       </div>
     </section>
   );
