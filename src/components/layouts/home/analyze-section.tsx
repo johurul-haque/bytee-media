@@ -5,9 +5,11 @@ import Image from "next/image";
 export function AnalyzeSection() {
   return (
     <section className="py-14">
-      <h2 className="sm:text-center text-3xl mb-2 font-medium">
-        <TextGradient>Analyze now</TextGradient>
-      </h2>
+      <TextGradient asChild>
+        <h2 className="sm:text-center text-3xl mb-2 font-medium">
+          Analyze now
+        </h2>
+      </TextGradient>
       <p className="sm:text-center max-w-md sm:mx-auto font-light leading-relaxed">
         What if there was a team who spoke fluent <em>{'"algorithm"'}</em> and
         understood your creative vision too?
