@@ -5,7 +5,7 @@ import { BookACall } from "@/components/book-a-call";
 
 export function HeroSection() {
   return (
-    <section className="flex items-center justify-between h-[clamp(35rem,90svh,min(90svh,45rem))]">
+    <section className="flex items-center justify-between h-[clamp(35rem,90svh,45rem)]">
       <div>
         <h1 className="text-4xl md:text-5xl leading-[2.8rem] tracking-wide font-medium">
           Tired of editing?

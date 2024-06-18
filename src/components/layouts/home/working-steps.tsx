@@ -25,17 +25,17 @@ export function WorkingSteps() {
 
         <ol className="space-y-4 text-xl font-bold mt-6 uppercase mb-8">
           <li>
-            <Marker>1.</Marker> Craft & cultivate
+            <Marker>1</Marker> Craft & cultivate
           </li>
           <li>
-            <Marker>2.</Marker> Competitor analysis
+            <Marker>2</Marker> Competitor analysis
           </li>
           <li>
-            <Marker>3.</Marker> Right editing style
+            <Marker>3</Marker> Right editing style
           </li>
         </ol>
 
-        <BookACall className="block max-w-fit mx-auto" />
+        <BookACall className="block max-w-fit max-lg:mx-auto" />
       </div>
     </section>
   );
@@ -43,7 +43,7 @@ export function WorkingSteps() {
 
 function Marker({ children }: { children: React.ReactNode }) {
   return (
-    <span className="bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium inline-flex items-center aspect-square px-4 rounded-full font-bold [text-shadow:1px_1px_2px_rgba(23_23_23/0.4)] mr-2">
+    <span className="bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium inline-flex items-center aspect-square px-4 rounded-full font-bold [text-shadow:1px_1px_2px_rgba(23_23_23/0.6)] mr-2">
       {children}
     </span>
   );
