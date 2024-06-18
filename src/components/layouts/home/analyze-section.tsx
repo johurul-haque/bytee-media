@@ -5,10 +5,10 @@ import Image from "next/image";
 export function AnalyzeSection() {
   return (
     <section className="py-14">
-      <h2 className="text-center text-3xl mb-2 font-medium">
+      <h2 className="sm:text-center text-3xl mb-2 font-medium">
         <TextGradient>Analyze now</TextGradient>
       </h2>
-      <p className="text-center max-w-md mx-auto font-light leading-relaxed">
+      <p className="sm:text-center max-w-md sm:mx-auto font-light leading-relaxed">
         What if there was a team who spoke fluent <em>{'"algorithm"'}</em> and
         understood your creative vision too?
       </p>
@@ -16,10 +16,10 @@ export function AnalyzeSection() {
       <div className="py-16 grid md:grid-cols-2 max-md:justify-items-center items-center gap-8">
         <div className="space-y-5">
           <p className="text-center">
-            <span className="tracking-wide block mb-2 text-neutral-400">
+            <span className="max-sm:text-sm tracking-wide block mb-2 text-neutral-400">
               Imagine getting comments like this..
             </span>
-            <TextGradient className="uppercase font-black text-4xl">
+            <TextGradient className="uppercase font-black text-3xl sm:text-4xl">
               Every single day
             </TextGradient>
           </p>

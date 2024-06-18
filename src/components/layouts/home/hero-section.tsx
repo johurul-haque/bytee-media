@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
 import banner from "@/assets/banner.png";
 import { TextGradient } from "@/components/text-gradient";
+import { BookACall } from "@/components/book-a-call";
 
 export function HeroSection() {
   return (
@@ -18,12 +18,7 @@ export function HeroSection() {
           and {"Hello to excellence"}
         </p>
 
-        <Link
-          href="/"
-          className="px-6 py-2 text-lg text-black font-bold bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium block max-w-fit rounded-md"
-        >
-          Book a call
-        </Link>
+        <BookACall />
       </div>
 
       <Image
