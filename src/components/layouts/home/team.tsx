@@ -2,6 +2,7 @@ import { ayanJoy, zunayed } from "@/assets/team";
 import Image from "next/image";
 import { FacebookIcon, InstagramIcon } from "lucide-react";
 import { SectionHeader } from "@/components/layouts/section-header";
+import { SocialLinks } from "@/components/social-links";
 
 const MEMBERS = [
   {
@@ -68,22 +69,5 @@ export function Team() {
         ))}
       </div>
     </section>
-  );
-}
-
-function SocialLinks({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      className="inline-block p-2 rounded-full bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium"
-    >
-      {children}
-    </a>
   );
 }

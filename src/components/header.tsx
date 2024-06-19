@@ -1,9 +1,8 @@
-import Image from "next/image";
-import logo from "@/assets/logo.svg";
 import Link from "next/link";
 import { MenuIcon, XIcon } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { useState } from "react";
+import { Logo } from "@/components/logo";
 
 const NAV_ITEMS = [
   {
@@ -35,16 +34,7 @@ export function Header() {
     <header className="container py-4 flex justify-between">
       <Link href="/">
         <span className="sr-only">Go to homepage</span>
-        <Image
-          src={logo}
-          className="w-24"
-          alt="Bytee media logo"
-          title="Bytee media logo"
-          role="presentation"
-          width={300}
-          height={300}
-          quality={100}
-        />
+        <Logo />
       </Link>
 
       <button className="sm:hidden" onClick={() => setIsVisible(true)}>

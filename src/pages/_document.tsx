@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from "next/document";
+import { inter } from "@/lib/fonts";
 
 export default function Document() {
   return (
@@ -6,7 +7,7 @@ export default function Document() {
       <Head>
         <link rel="shortcut icon" href="/icon.svg" type="image/x-icon" />
       </Head>
-      <body>
+      <body className={inter.className}>
         <Main />
         <NextScript />
       </body>
