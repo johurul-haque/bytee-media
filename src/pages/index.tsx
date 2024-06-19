@@ -5,6 +5,7 @@ import { WorkingSteps } from "@/components/layouts/home/working-steps";
 import { Team } from "@/components/layouts/home/team";
 import { OurServices } from "@/components/layouts/home/our-services";
 import { Packages } from "@/components/layouts/home/packages";
+import { WhyUs } from "@/components/layouts/home/why-us";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Team />
       <OurServices />
       <Packages />
+      <WhyUs />
     </main>
   );
 }

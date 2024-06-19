@@ -12,7 +12,7 @@ export function Packages() {
           p: "max-w-lg",
         }}
       />
-      <div className="grid justify-center sm:grid-cols-[repeat(auto-fill,22rem)] gap-6 my-10">
+      <div className="flex justify-center flex-wrap gap-6 my-10">
         {getPackages().map(({ title, features, isPopular }) => (
           <dl
             key={title}
