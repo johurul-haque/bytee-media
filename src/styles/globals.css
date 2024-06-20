@@ -7,3 +7,8 @@
     @apply bg-neutral-950 text-neutral-50;
   }
 }
+
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: rgb(250 250 250);
+  background: var(--swiper-pagination-bullet-inactive-color);
+}

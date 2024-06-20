@@ -6,6 +6,7 @@ import { OurServices } from "@/components/layouts/home/our-services";
 import { Packages } from "@/components/layouts/home/packages";
 import { WhyUs } from "@/components/layouts/home/why-us";
 import { inter } from "@/lib/fonts";
+import { Testimonials } from "@/components/layouts/home/testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <OurServices />
       <Packages />
       <WhyUs />
+      <Testimonials />
     </main>
   );
 }
