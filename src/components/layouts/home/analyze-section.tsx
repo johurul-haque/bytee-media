@@ -1,19 +1,16 @@
 import { TextGradient } from "@/components/text-gradient";
 import comment from "@/assets/comment.png";
 import Image from "next/image";
+import { SectionHeader } from "@/components/layouts/section-header";
 
 export function AnalyzeSection() {
   return (
     <section className="py-14">
-      <TextGradient asChild>
-        <h2 className="sm:text-center text-3xl mb-2 font-medium">
-          Analyze now
-        </h2>
-      </TextGradient>
-      <p className="sm:text-center max-w-md sm:mx-auto font-light leading-relaxed">
-        What if there was a team who spoke fluent <em>{'"algorithm"'}</em> and
-        understood your creative vision too?
-      </p>
+      <SectionHeader
+        title="Analyze now"
+        description='What if there was a team who spoke fluent "algorithm" and
+        understood your creative vision too?'
+      />
 
       <div className="py-16 grid md:grid-cols-2 max-md:justify-items-center items-center gap-8">
         <div className="space-y-5">

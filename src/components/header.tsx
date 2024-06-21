@@ -41,7 +41,7 @@ export function Header() {
   };
 
   return (
-    <header className="container py-4 flex justify-between">
+    <header className="container sticky py-4 top-0 z-10 bg-neutral-950 flex justify-between">
       <Link href="/">
         <span className="sr-only">Go to homepage</span>
         <Logo />
@@ -54,7 +54,7 @@ export function Header() {
 
       <nav
         className={cn(
-          "max-sm:absolute max-sm:inset-4 max-sm:p-16 max-sm:bg-neutral-950 max-sm:border max-sm:scale-0" +
+          "max-sm:fixed max-sm:z-50 max-sm:inset-4 max-sm:p-16 max-sm:bg-neutral-950 max-sm:border max-sm:scale-0" +
             " max-sm:transition-transform max-sm:origin-top-right max-sm:duration-300",
           isVisible && "max-sm:scale-100",
         )}

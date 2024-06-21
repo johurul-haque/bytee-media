@@ -5,8 +5,8 @@ import { BookACall } from "@/components/book-a-call";
 
 export function HeroSection() {
   return (
-    <section className="flex max-lg:flex-col items-center justify-between lg:h-[clamp(35rem,90svh,45rem)]">
-      <div className="mt-20 mb-10 max-lg:text-center">
+    <section className="flex max-xl:flex-col items-center justify-between lg:h-[clamp(35rem,90svh,45rem)]">
+      <div className="max-xl:mt-20 max-xl:mb-10 max-xl:text-center">
         <h1 className="text-3xl xs:text-4xl sm:text-5xl xs:leading-[2.8rem] xs:tracking-wide font-medium">
           Tired of editing?
           <br />
@@ -18,12 +18,12 @@ export function HeroSection() {
           and {"Hello to excellence"}
         </p>
 
-        <BookACall className="max-lg:mx-auto" />
+        <BookACall className="max-xl:mx-auto" />
       </div>
 
       <Image
         src={banner}
-        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)] max-lg:w-full"
+        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)] max-xl:w-full"
         alt=""
         role="presentation"
         width={800}
