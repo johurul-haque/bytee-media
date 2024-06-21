@@ -12,12 +12,12 @@ export function Footer() {
       <div>
         <Image
           src={dreamBig}
-          className="block mx-auto -mb-4 max-sm:max-w-xs"
+          className="block mx-auto -mb-4 max-sm:max-w-xs w-full"
           alt=""
           role="presentation"
           quality={100}
         />
-        <h2 className="text-3xl md:text-5xl font-semibold text-center mb-6">
+        <h2 className="text-2xl max-sm:mt-2 sm:text-3xl md:text-5xl font-semibold text-center mb-6">
           Schedule a call Today!
         </h2>
         <BookACall className="mx-auto" />

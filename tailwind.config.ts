@@ -16,6 +16,9 @@ const config: Config = {
         "amber-medium": "hsl(30, 99%, 68%)",
         "amber-light": "hsl(40, 90%, 67%)",
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [],

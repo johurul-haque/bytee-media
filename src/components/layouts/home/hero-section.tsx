@@ -5,15 +5,15 @@ import { BookACall } from "@/components/book-a-call";
 
 export function HeroSection() {
   return (
-    <section className="flex items-center justify-between h-[clamp(35rem,90svh,45rem)]">
-      <div>
-        <h1 className="text-4xl md:text-5xl leading-[2.8rem] tracking-wide font-medium">
+    <section className="flex max-lg:flex-col items-center justify-between lg:h-[clamp(35rem,90svh,45rem)]">
+      <div className="mt-20 mb-10">
+        <h1 className="text-3xl xs:text-4xl md:text-5xl xs:leading-[2.8rem] xs:tracking-wide font-medium">
           Tired of editing?
           <br />
           <TextGradient>Focus on</TextGradient> creating
         </h1>
 
-        <p className="max-w-sm mt-4 mb-6 tracking-wider">
+        <p className="max-w-sm mt-4 mb-6 max-xs:text-sm tracking-wider">
           One Stop Solution for content creators. Say goodbye to average content
           and {"Hello to excellence"}
         </p>
@@ -23,7 +23,7 @@ export function HeroSection() {
 
       <Image
         src={banner}
-        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)] max-lg:hidden"
+        className="max-h-full max-w-fit [mask-image:linear-gradient(to_bottom,#000_75%,transparent)] max-lg:w-full"
         alt=""
         role="presentation"
         width={800}
