@@ -35,7 +35,7 @@ export function Footer() {
           <div>
             <div className="flex gap-6">
               {[
-                ["Services", "#services"],
+                ["Services", "/#services"],
                 ["Portfolio", "/portfolio"],
                 ["Contact Us", "/contact"],
               ].map(([label, href]) => (

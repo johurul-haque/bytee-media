@@ -11,11 +11,11 @@ const NAV_ITEMS = [
   },
   {
     label: "About us",
-    href: "#about",
+    href: "/#about",
   },
   {
     label: "Services",
-    href: "#services",
+    href: "/#services",
   },
   {
     label: "Portfolio",
