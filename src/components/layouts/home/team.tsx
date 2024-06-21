@@ -10,8 +10,9 @@ const MEMBERS = [
     role: "Founder & CEO",
     image: ayanJoy,
     social: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/Joyzvirus?mibextid=ZbWKwL",
+      instagram:
+        "https://www.instagram.com/call_mee_ayan?igsh=MWVoNDhtM3VqNHcxeA==",
     },
   },
   {
@@ -19,15 +20,15 @@ const MEMBERS = [
     role: "Co-Founder",
     image: zunayed,
     social: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/md.zunayedhowlader.9?mibextid=ZbWKwL",
+      instagram: "https://www.instagram.com/zu_nayed?igsh=bDA1d3lzY2gwMWQz",
     },
   },
 ];
 
 export function Team() {
   return (
-    <section className="py-16">
+    <section id="about" className="py-16">
       <SectionHeader
         title="Meet the team"
         description="We're video enthusiasts, not just editors. We strategize, tell stories, and geek out on marketing to help you win with video"

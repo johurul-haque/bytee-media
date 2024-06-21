@@ -11,11 +11,11 @@ const NAV_ITEMS = [
   },
   {
     label: "About us",
-    href: "/about",
+    href: "#about",
   },
   {
     label: "Services",
-    href: "/services",
+    href: "#services",
   },
   {
     label: "Portfolio",
@@ -30,6 +30,16 @@ const NAV_ITEMS = [
 export function Header() {
   const [isVisible, setIsVisible] = useState(false);
 
+  const handleOpen = () => {
+    setIsVisible(true);
+    document.body.classList.add("overflow-hidden");
+  };
+
+  const handleClose = () => {
+    setIsVisible(false);
+    document.body.classList.remove("overflow-hidden");
+  };
+
   return (
     <header className="container py-4 flex justify-between">
       <Link href="/">
@@ -37,7 +47,7 @@ export function Header() {
         <Logo />
       </Link>
 
-      <button className="sm:hidden" onClick={() => setIsVisible(true)}>
+      <button className="sm:hidden" onClick={handleOpen}>
         <span className="sr-only">Open menu</span>
         <MenuIcon />
       </button>
@@ -51,7 +61,7 @@ export function Header() {
       >
         <button
           className="sm:hidden absolute right-4 top-4"
-          onClick={() => setIsVisible(false)}
+          onClick={handleClose}
         >
           <span className="sr-only">Close menu</span>
           <XIcon size={20} />
@@ -60,7 +70,9 @@ export function Header() {
         <ul className="flex max-sm:flex-col sm:items-center gap-6 lg:gap-8">
           {NAV_ITEMS.map(({ label, href }) => (
             <li key={href}>
-              <Link href={href}>{label}</Link>
+              <Link href={href} onClick={handleClose}>
+                {label}
+              </Link>
             </li>
           ))}
         </ul>

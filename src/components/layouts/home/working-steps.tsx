@@ -5,17 +5,17 @@ import { BookACall } from "@/components/book-a-call";
 
 export function WorkingSteps() {
   return (
-    <section className="flex max-lg:items-center max-lg:flex-col gap-20 pb-16 justify-center">
+    <section className="flex items-center max-lg:flex-col gap-y-14 gap-x-20 pb-16 justify-center max-lg:max-w-lg max-lg:mx-auto">
       <Image
         src={zunayed}
-        className="border-8 border-amber-light max-w-md w-full"
+        className="border-8 border-amber-light lg:max-w-md w-full"
         alt="Picture of Md. Zunayed Howlader"
         width={800}
         height={800}
       />
 
       <div>
-        <h2 className="text-2xl font-semibold max-w-lg">
+        <h2 className="text-2xl lg:max-w-lg max-lg:text-center font-semibold">
           We have{" "}
           <TextGradient className="uppercase italic font-black inline-block pr-0.5">
             3 Working steps
@@ -23,7 +23,7 @@ export function WorkingSteps() {
           to organize our business projects.
         </h2>
 
-        <ol className="space-y-4 text-xl font-bold mt-6 uppercase mb-8">
+        <ol className="space-y-4 text-xl max-lg:max-w-fit max-lg:mx-auto font-bold mt-6 uppercase mb-8">
           <li>
             <Marker>1</Marker> Craft & cultivate
           </li>

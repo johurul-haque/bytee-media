@@ -10,10 +10,10 @@ export function BookACall({
 }) {
   return (
     <Link
-      href="/"
+      href="https://calendly.com/byteemedia-hunv/30min?month=2024-06"
       className={cn(
-        "px-6 py-2 text-lg text-black font-bold bg-gradient-to-b from-amber-dark via-amber-light" +
-          " to-amber-medium block max-w-fit rounded-md",
+        "px-6 py-2 text-lg text-black font-bold bg-gradient-to-b from-amber-dark via-amber-light to-amber-medium" +
+          " block max-w-fit rounded-md max-sm:truncate",
         className,
       )}
     >

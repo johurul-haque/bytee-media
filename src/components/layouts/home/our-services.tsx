@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export function OurServices() {
   return (
-    <section className="py-16">
+    <section id="services" className="py-16">
       <SectionHeader
         title="Our Services"
         description="From Raw Footage to Ranking Rocket: Your One-Stop Shop for Video Editing Magic"
