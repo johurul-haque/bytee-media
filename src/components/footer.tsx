@@ -12,7 +12,7 @@ export function Footer() {
       <div>
         <Image
           src={dreamBig}
-          className="block mx-auto -mb-4 max-sm:max-w-xs w-full"
+          className="block mx-auto -mb-4 max-w-xs w-full"
           alt=""
           role="presentation"
           quality={100}

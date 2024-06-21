@@ -1,4 +1,3 @@
-import first from "@/assets/testimonials/first.png";
 import { SectionHeader } from "@/components/layouts/section-header";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
+import { first, second, third } from "@/assets/testimonials";
 
 export function Testimonials() {
   return (
@@ -27,10 +27,10 @@ export function Testimonials() {
         modules={[Autoplay, Pagination]}
         className="mt-12 max-w-xl h-96"
       >
-        {Array.from({ length: 3 }).map((_, i) => (
-          <SwiperSlide key={i}>
+        {[first, second, third].map((image) => (
+          <SwiperSlide key={image.src}>
             <Image
-              src={first}
+              src={image}
               alt=""
               width={1920}
               height={1080}
