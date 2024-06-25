@@ -41,7 +41,7 @@ export function Header() {
   };
 
   return (
-    <header className="container sticky py-4 top-0 z-10 bg-neutral-950 flex justify-between">
+    <header className="container sticky py-4 top-0 z-20 bg-neutral-950 flex justify-between">
       <Link href="/">
         <span className="sr-only">Go to homepage</span>
         <Logo />

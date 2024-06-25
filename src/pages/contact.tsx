@@ -14,8 +14,8 @@ export default function Contact() {
         <div>
           <DtTitle title="Phone" icon={phone} />
           <dd className="[&>a]:block space-y-1 [&>a]:max-w-fit [&>a]:mx-auto mt-2">
-            <a href="tel:+8801759670492"> +8801759670492</a>
-            <a href="tel:+881303129907">+881303129907</a>
+            <a href="tel:+8801759670492"> +880 1759-670492</a>
+            <a href="tel:+8801303129907">+880 1303-129907</a>
           </dd>
         </div>
 
