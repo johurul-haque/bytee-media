@@ -24,6 +24,15 @@ export default function App({ Component, pageProps }: AppProps) {
           content='One stop solution for content creators. Say goodbye to average content and "Hello to Excellence"'
         />
         <meta property="og:url" content="https://byteemedia.com/" />
+        <meta
+          name="Discover Bytee Media - the video editing agency for long/short form edits, thumbnails, YouTube SEO, and more. Perfect for creators!"
+          content="Bytee Media"
+        />
+        <meta
+          name="Bytee Media, bytee media, BYTEE MEDIA, byteemedia, BYTEEMEDIA"
+          content="HTML, CSS, JavaScript"
+        />
+        <meta name="author" content="Bytee Media" />
       </Head>
 
       <Header />
