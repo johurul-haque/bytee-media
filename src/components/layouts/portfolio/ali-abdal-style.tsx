@@ -6,7 +6,7 @@ export function AliAbdalStyle() {
     <section className="py-10">
       <CursiveText title="Ali Abdal Style" textImage={aliAbdal} />
 
-      <div className="flex justify-center gap-6 mt-4">
+      <div className="flex flex-wrap justify-center gap-6 mt-4">
         <iframe
           width="560"
           height="315"
